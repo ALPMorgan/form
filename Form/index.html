@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>
+            Это мой первый сайт
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__conteiner">
+                    <div class="logo"></div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Карточки товаров</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Ссылки</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Регистрация</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+            </header>
+            <main class="main">
+                <section class="booking" target="_blank">
+                    <div class="booking__conteiner conteiner">
+                        <h2 class="form__title">Регистрация</h2>
+                        <form action="#openModal" class="form">
+                            <div class="textbox">
+                                <input type="text"  name="first_name" required placeholder="Имя">
+                            </div>
+                            <div class="textbox">
+                                <input type="text"  name="last_name"  placeholder="Фамилия">
+                            </div>
+                            <div class="textbox">
+                                <input type="email" name="email" required placeholder="E-mail">
+                            </div>
+                            <div class="textbox">
+                                <input type="password"  name="password" required placeholder="Пароль">
+                            </div>
+                            <div class="textbox">
+                                <input type="password" name="reply_password" required placeholder="Повторите пароль">
+                            </div>
+                            
+                            <button href="" type="submit" class="form__button btn">Регистрация</button>
+                            <div class="form__text">или</div>
+                            <a href="enter.html" class="form__reg">Вход</a>
+                        </form>
+                        <div id="openModal" class="modal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <a href="#close" title="Close" class="close">×</a>
+                                        <div class="modal-body">    
+                                            <p>Вы супер! =)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__block">
+                        <div class="footer__title">Контакты</div>
+                        <a  href="tel:+380441234567" class="footer__tel">+38 (044) 123-45-67</a>
+                        <a href="mailto:afaffasf@mail.ru" class="footer__mail">afaffasf@mail.ru</a>
+                    </div>
+                    <nav class="footer__menu menu-footer">
+                        <div class="menu-footer__title">Основное меню</div>
+                        <ul class="menu__list menu__list-footer">
+                            <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Карточки товаров</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Ссылки</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Регистрация</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__form">
+                        <div class="footer__form-title">
+                            Подпишись
+                        </div>
+                        <form action="">
+                            <input class="footer__form-input" type="text" placeholder="Ваш e-mail">
+                            <button class="btn-footer">Подпишись</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

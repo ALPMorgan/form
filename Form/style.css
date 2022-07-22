@@ -1,0 +1,357 @@
+body {
+    
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.booking {
+    padding: 50px 0;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteiner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form__title {
+    font-size: 40px;
+margin-bottom: 30px;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px;
+    transition: all 1s ease;
+}
+input:hover {
+    height: 40px;
+    outline: none;
+    box-shadow: 0 0 6px red;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 3px red;
+}
+
+.form > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    background-color: #d1874b;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 1s ease;
+    color: aliceblue;
+    box-shadow:  0px 10px 5px rgba(80, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.btn:hover{
+    background: #fff;
+    color: #fff;
+    outline: 1px solid red;
+    color: #2024aa;
+    box-shadow:  0px 0px 5px red;
+    transform: translatey(10px);
+}
+
+
+
+.enter {
+    padding: 50px 0;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+a:hover {
+    
+}
+a::after {
+    content: "";
+    width: 100px;
+    color: red;
+    height: 1px;
+}
+
+a::after:hover {
+    content: "";
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    color: red;
+    height: 1px;
+}
+
+
+
+
+
+.supper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.supper__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #2024aa;
+}
+
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    width: 500px;
+    height: 250px;
+    margin: 200px auto; /* для отображения модального окна по центру */
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 15px;
+    height: 100%;
+}
+.modal-body {
+    font-size: 40px;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    background-color: #994d0f;
+}
+.header__conteiner {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.menu {
+    color: #fff;
+}
+.menu__item {
+    list-style-type: none;
+}
+.menu__list {
+    display: flex;
+    gap: 60px;
+}
+.menu__link {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.menu__link:hover {
+    text-decoration: underline;
+    color: rgb(88, 224, 224);
+}
+
+.footer {
+    background-color: #994d0f;
+    padding: 50px 0;
+}
+.footer__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.footer__block > * {
+    margin-bottom: 20px;
+}
+.footer__title {
+    font-size: 40px;
+    color: #fff;
+}
+.footer__tel {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer__mail {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer__tel:hover {
+    text-decoration: underline;
+    color: rgb(88, 224, 224);
+}
+.footer__mail:hover {
+    text-decoration: underline;
+    color: rgb(88, 224, 224);
+}
+.menu__list-footer {
+    display: block;
+    padding: 0;
+}
+.menu__list-footer>* {
+    margin-bottom: 20px;
+}
+.menu-footer__title {
+    font-size: 40px;
+    color: #fff;
+}
+.footer__form {
+    flex: 0 1 400px;
+}
+.footer__form-title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer__form-input {
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    color: black;
+    font-size: 16px;
+    border: 0;
+    margin-bottom: 20px;
+}
+.btn-footer {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(171, 151, 241);
+    color: black ;
+    
+    font-size: 24px;
+    border: 0;
+}
+.btn-footer:hover {
+    background-color: rgb(85, 26, 223);
+    color: #fff;
+    transition: all 0.3s ease;
+}
